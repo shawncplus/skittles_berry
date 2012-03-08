@@ -27,10 +27,10 @@ hi WarningMsg     term=standout ctermfg=15 ctermbg=236 gui=bold guifg=#ffffff gu
 hi WildMenu       term=standout ctermfg=81 ctermbg=233 guifg=#5fd7ff guibg=#121212
 hi Folded         term=standout ctermfg=66 ctermbg=0 guifg=#465457 guibg=#000000
 hi FoldColumn     term=standout ctermfg=66 ctermbg=0 guifg=#465457 guibg=#000000
-hi DiffAdd        ctermfg=230 ctermbg=24 guifg=#f8f8f2 guibg=#13354a
-hi DiffChange     ctermfg=95 ctermbg=95 guifg=#89807d guibg=#4c4745
+hi DiffAdd        ctermfg=NONE ctermbg=24 guifg=#f8f8f2 guibg=#13354a
+hi DiffChange     term=bold ctermbg=238 guifg=#89807d guibg=#4c4745
 hi DiffDelete     ctermfg=125 ctermbg=125 guifg=#960050 guibg=#1e0010
-hi DiffText       term=reverse ctermfg=141 ctermbg=64 gui=bold guifg=#ad81ff guibg=#4a7800
+hi DiffText       term=reverse cterm=bold ctermfg=0 ctermbg=202 gui=bold guifg=#ad81ff guibg=#4a7800
 hi SignColumn     term=standout ctermfg=149 ctermbg=74 guifg=#a6e22e guibg=#232526
 hi Conceal        ctermfg=7 ctermbg=242 guifg=#e5e5e5 guibg=#080808
 hi SpellBad       term=reverse ctermfg=255 ctermbg=9 guifg=#eeeeee guisp=#ff0000
