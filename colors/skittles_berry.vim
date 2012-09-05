@@ -43,8 +43,8 @@ hi PmenuSbar      ctermfg=81 ctermbg=232 guifg=#5fd7ff guibg=#080808
 hi PmenuThumb     ctermfg=81 guifg=#5fd7ff
 hi TabLine        ctermfg=255 ctermbg=242 guifg=#eeeeee guibg=#080808
 hi TabLineSel     ctermfg=255 guifg=#eeeeee
-hi TabLineFill    term=reverse ctermfg=255 guifg=#eeeeee
-hi CursorColumn   term=reverse ctermfg=255 ctermbg=233 guifg=#eeeeee guibg=#121212
+hi TabLineFill    cterm=none term=none ctermbg=235 guibg=#262626
+hi CursorColumn   cterm=none term=none ctermbg=235 guibg=#262626
 hi CursorLine     cterm=none term=none ctermbg=235 guibg=#262626
 hi clear ColorColumn
 hi link ColorColumn CursorLine
