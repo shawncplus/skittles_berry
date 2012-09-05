@@ -7,7 +7,7 @@ if version > 580
 endif
 let g:colors_name="skittles_berry"
 
-hi SpecialKey     ctermfg=235 guifg=#262626
+hi SpecialKey     ctermfg=240 guifg=#585858
 hi NonText        ctermfg=250 guifg=#bcbcbc
 hi Directory      ctermfg=149 gui=bold guifg=#afd75f
 hi ErrorMsg       term=standout ctermfg=117 gui=bold guifg=#87d7ff
