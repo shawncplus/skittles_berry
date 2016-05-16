@@ -79,7 +79,7 @@ hi Define         ctermfg=30 cterm=bold
 hi link Structure Define
 hi Macro          ctermfg=186
 hi PreCondit      ctermfg=149 cterm=bold
-hi StorageClass   ctermfg=20
+hi StorageClass   ctermfg=208
 hi Typedef        ctermfg=80
 hi Tag            ctermfg=117
 hi SpecialChar    ctermfg=208 cterm=bold
