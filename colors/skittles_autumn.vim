@@ -1,11 +1,5 @@
-" A warm, console-only (for the transparent background) variation on skittles
-" berry. It's assumed to have Vim running with a semi-transparent terminal and
-" an autumn-like wallpaper behind it such as
-" http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-3590.jpg
-" or simply a similar wallpaper set as the terminal background.
-"
-" Since gui vim only supports transparency in macvim I didn't even bother
-" making a gui version
+" A warm, console-only variation on skittles berry. 
+" @author Shawn Biddle <github.com/shawncplus>
 set background=dark
 if version > 580
     hi clear
@@ -15,7 +9,6 @@ if version > 580
 endif
 let g:colors_name="skittles_autumn"
 
-hi Structure      ctermfg=70
 hi SpecialKey     ctermfg=235
 hi NonText        ctermfg=240
 hi Directory      ctermfg=149
@@ -24,7 +17,7 @@ hi IncSearch      term=reverse ctermfg=186 ctermbg=0
 hi Search         term=reverse ctermfg=15 ctermbg=66
 hi MoreMsg        ctermfg=228
 hi ModeMsg        ctermfg=228
-hi LineNr         ctermfg=236 ctermbg=232
+hi LineNr         ctermfg=242 ctermbg=none
 hi Question       term=standout ctermfg=80
 hi StatusLine     term=reverse ctermfg=66
 hi StatusLineNC   term=reverse ctermfg=8 ctermbg=232
@@ -38,10 +31,10 @@ hi Folded         term=standout ctermfg=66 ctermbg=0
 hi FoldColumn     term=standout ctermfg=66 ctermbg=none
 hi DiffAdd        ctermfg=none ctermbg=234
 hi DiffChange     term=bold ctermbg=238
-hi DiffDelete     ctermfg=125 ctermbg=125
+hi DiffDelete     ctermfg=124 ctermbg=52
 hi DiffText       cterm=bold ctermbg=240
 hi SignColumn     term=standout ctermfg=149 ctermbg=none
-hi Conceal        ctermfg=7 ctermbg=242
+hi Conceal        ctermfg=none ctermbg=none
 hi SpellBad       term=reverse ctermfg=255 ctermbg=9  guisp=#ff0000
 hi SpellCap       term=reverse ctermfg=255 ctermbg=12  guisp=#0000ff
 hi SpellRare      term=reverse ctermfg=255 ctermbg=13  guisp=#ff00ff
@@ -55,17 +48,17 @@ hi TabLineSel     ctermfg=255
 hi TabLineFill    term=reverse ctermfg=255
 hi CursorColumn   term=reverse ctermfg=255 ctermbg=none
 hi CursorLine     cterm=none term=none ctermbg=235
-hi CursorLineNr   cterm=bold ctermfg=125 ctermbg=233
+hi CursorLineNr   cterm=bold ctermfg=125 ctermbg=none
 hi clear ColorColumn
 hi link ColorColumn CursorLine
 hi MatchParen     cterm=bold ctermfg=0 ctermbg=208
-hi Comment        ctermfg=66
+hi Comment        ctermfg=66 cterm=italic
 hi Constant       ctermfg=91 cterm=bold
 hi Special        ctermfg=80 cterm=bold
 hi Statement      ctermfg=196 ctermbg=none
 hi PreProc        ctermfg=149
 hi Type           ctermfg=80
-hi Underlined     ctermfg=8
+hi Underlined     ctermfg=7
 hi Ignore         ctermfg=8
 hi Error          term=reverse  ctermfg=125 ctermbg=7
 hi Todo           term=standout ctermfg=0 ctermbg=11
@@ -83,23 +76,24 @@ hi Keyword        ctermfg=117 cterm=bold
 hi Exception      ctermfg=142 cterm=bold
 hi Include        ctermfg=255
 hi Define         ctermfg=30 cterm=bold
+hi link Structure Define
 hi Macro          ctermfg=186
 hi PreCondit      ctermfg=149 cterm=bold
-hi StorageClass   ctermfg=208
+hi StorageClass   ctermfg=20
 hi Typedef        ctermfg=80
 hi Tag            ctermfg=117
 hi SpecialChar    ctermfg=208 cterm=bold
 hi Delimiter      ctermfg=245
 hi SpecialComment ctermfg=66 cterm=bold
 hi Debug          ctermfg=138 cterm=bold
-hi Normal         ctermfg=222 ctermbg=none
+hi Normal         ctermfg=222 ctermbg=235
 hi Identifier     cterm=none term=none ctermfg=222
 hi clear Cursor
 hi Cursor         ctermbg=26 ctermfg=7
 
 
-hi GitGutterChange ctermfg=202 ctermbg=233 cterm=bold
-hi GitGutterDelete ctermfg=125 ctermbg=233 cterm=bold
-hi GitGutterAdd    ctermfg=190 ctermbg=233 cterm=bold
+hi GitGutterChange ctermfg=202 ctermbg=none cterm=bold
+hi GitGutterDelete ctermfg=125 ctermbg=none cterm=bold
+hi GitGutterAdd    ctermfg=190 ctermbg=none cterm=bold
 hi link TagbarSignature Type
 
